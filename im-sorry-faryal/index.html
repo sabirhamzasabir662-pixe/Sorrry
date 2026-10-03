@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Faryal - From Hamza</title>
+  <meta name="description" content="A personal message from Hamza to Faryal, with all his heart." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- PASSWORD SCREEN -->
+  <div id="password-screen" class="password-screen">
+    <div class="pw-card glass">
+      <div class="pw-heart">&#x1F338;</div>
+      <h1 class="pw-title">This is just for you</h1>
+      <p class="pw-sub">Enter the password Hamza gave you</p>
+      <input id="pw-input" type="password" class="pw-input" placeholder="Your secret word&#x2026;" autocomplete="off"
+        spellcheck="false" />
+      <button id="pw-btn" class="btn-primary" onclick="checkPassword()">Open &#x2756;</button>
+      <p id="pw-error" class="pw-error" aria-live="polite"></p>
+    </div>
+    <div class="floating-hearts" id="pw-hearts" aria-hidden="true"></div>
+  </div>
+
+  <!-- MAIN SITE -->
+  <main id="main-site" class="hidden" aria-label="Apology letter from Hamza to Faryal">
+
+    <!-- Music player -->
+    <div id="music-player" class="music-player" role="region" aria-label="Background music">
+      <button id="music-btn" class="music-btn" onclick="toggleMusic()" aria-label="Play background music">
+        <span class="music-icon">&#x266A;</span>
+        <span class="music-label">Khudaai</span>
+      </button>
+    </div>
+
+    <!-- SECTION 1: HERO -->
+    <section id="hero" class="section hero-section" aria-label="Opening">
+      <div class="hero-bg-img" aria-hidden="true"></div>
+      <div class="floating-hearts" id="hero-hearts" aria-hidden="true"></div>
+      <div class="hero-content fade-in-up">
+        <p class="hero-eyebrow">A letter from Hamza</p>
+        <h1 class="hero-title">Faryal,<br /><em>I am sorry.</em></h1>
+        <p class="hero-sub">From Hamza, with all my heart.</p>
+        <button id="read-btn" class="btn-primary btn-large" onclick="scrollToSection('section-hurt')">
+          Please read this &nbsp;&#x2193;
+        </button>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">scroll</div>
+    </section>
+
+    <!-- SECTION 2: I KNOW I HURT YOU -->
+    <section id="section-hurt" class="section hurt-section" aria-label="Acknowledgment">
+      <div class="section-inner">
+        <div class="section-card glass reveal">
+          <span class="section-tag">I know I hurt you</span>
+          <h2 class="section-heading">I am sorry, Faryal.</h2>
+          <p class="body-text">
+            I hurt you with my words and did not listen when you needed me most.
+            There is no excuse for that. None. What I did was wrong, and I own it
+            completely. I am not writing this to defend myself or to ask you to
+            forget &#x2014; I am writing this because you deserve to hear the truth from me:
+          </p>
+          <blockquote class="quote-block">
+            &#x201C;You came to me with your heart open, and I let you down.<br />I am deeply, sincerely sorry.&#x201D;
+          </blockquote>
+          <p class="urdu-line" lang="ur" dir="rtl">&#x645;&#x639;&#x627;&#x641;&#x6CC;
+            &#x645;&#x627;&#x646;&#x6AF;&#x646;&#x627; &#x622;&#x633;&#x627;&#x646; &#x646;&#x6C1;&#x6CC;&#x06BA;
+            &#x2014; &#x644;&#x6CC;&#x6A9;&#x646; &#x62A;&#x645; &#x645;&#x6CC;&#x631;&#x6D2; &#x644;&#x6CC;&#x6D2;
+            &#x6C1;&#x631; &#x645;&#x634;&#x6A9;&#x644; &#x622;&#x633;&#x627;&#x646; &#x6A9;&#x631;
+            &#x62F;&#x6CC;&#x62A;&#x6CC; &#x6C1;&#x648;&#x06D4;</p>
+          <p class="urdu-translation">(Asking for forgiveness is not easy &#x2014; but you make every hard thing easier
+            for me.)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: WHAT YOU MEAN TO ME -->
+    <section id="section-meaning" class="section meaning-section" aria-label="What you mean to me">
+      <div class="section-inner">
+        <span class="section-tag centered">What you mean to me</span>
+        <h2 class="section-heading centered reveal">You are my whole world, Faryal.</h2>
+        <p class="body-text centered reveal">
+          Long before I found the words, I felt it. Slowly, quietly, without even
+          realising &#x2014; you became the part of my day I looked forward to the most.
+        </p>
+        <div class="memory-grid">
+          <div class="memory-card glass reveal">
+            <div class="memory-img-wrap">
+              <img src="images/memory_meet.jpg" alt="Illustration of two people sitting together at university"
+                class="memory-img" loading="lazy" />
+            </div>
+            <div class="memory-body">
+              <span class="memory-label">How we met</span>
+              <p class="memory-text">
+                We met at university, and I fell for you slowly &#x2014; without realising it.
+                One day I just noticed that everything was a little better when you were there.
+                Your laugh, your focus, the way you tilted your head when you were thinking.
+                I did not know then that I was already yours.
+              </p>
+            </div>
+          </div>
+          <div class="memory-card glass reveal photo-slot" aria-label="Photo placeholder 1">
+            <div class="photo-placeholder">
+              <span class="photo-icon">&#x1F5BC;&#xFE0F;</span>
+              <p>Add a photo of us here</p>
+              <small>Replace images/photo1.jpg in the code</small>
+            </div>
+          </div>
+          <div class="memory-card glass reveal photo-slot" aria-label="Photo placeholder 2">
+            <div class="photo-placeholder">
+              <span class="photo-icon">&#x1F5BC;&#xFE0F;</span>
+              <p>Another favourite moment</p>
+              <small>Replace images/photo2.jpg in the code</small>
+            </div>
+          </div>
+        </div>
+        <div class="closing-line glass reveal">
+          <p class="urdu-line large" lang="ur" dir="rtl">&#x62A;&#x645; &#x645;&#x6CC;&#x631;&#x6CC;
+            &#x62F;&#x646;&#x6CC;&#x627; &#x6C1;&#x648; &#x2014; &#x627;&#x648;&#x631; &#x645;&#x6CC;&#x06BA;
+            &#x62A;&#x645;&#x6C1;&#x6CC;&#x06BA; &#x62A;&#x6A9;&#x644;&#x6CC;&#x641; &#x62F;&#x6CC;&#x62A;&#x627;
+            &#x6C1;&#x648;&#x06BA; &#x06CC;&#x6C1; &#x633;&#x648;&#x686; &#x6A9;&#x6D2; &#x6C1;&#x6CC; &#x62F;&#x644;
+            &#x679;&#x648;&#x679; &#x62C;&#x627;&#x62A;&#x627; &#x6C1;&#x6D2;&#x06D4;</p>
+          <p class="urdu-translation">(You are my world &#x2014; and the very thought that I have hurt you breaks my
+            heart.)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: PROMISES -->
+    <section id="section-promises" class="section promises-section" aria-label="My promises to you">
+      <div class="section-inner">
+        <span class="section-tag centered">My promises to you</span>
+        <h2 class="section-heading centered reveal">These are not just words.</h2>
+        <div class="promises-grid">
+          <div class="promise-card glass reveal" data-delay="0">
+            <div class="promise-icon" aria-hidden="true">&#x1F932;</div>
+            <h3 class="promise-title">I will listen</h3>
+            <p class="promise-text">I promise to always listen to you &#x2014; even when I do not understand, even when
+              it is hard. Your voice matters more than my silence.</p>
+          </div>
+          <div class="promise-card glass reveal" data-delay="100">
+            <div class="promise-icon" aria-hidden="true">&#x1F48D;</div>
+            <h3 class="promise-title">I will choose you</h3>
+            <p class="promise-text">I promise to choose you &#x2014; always &#x2014; in every argument, every silence,
+              and every moment in between. You are not someone I settle for. You are who I choose.</p>
+          </div>
+          <div class="promise-card glass reveal" data-delay="200">
+            <div class="promise-icon" aria-hidden="true">&#x1F331;</div>
+            <h3 class="promise-title">I will be better</h3>
+            <p class="promise-text">I promise to be the husband you deserve &#x2014; not just the one I think I am. I
+              will work on myself every single day, for you.</p>
+          </div>
+          <div class="promise-card glass reveal" data-delay="300">
+            <div class="promise-icon" aria-hidden="true">&#x1F6E1;&#xFE0F;</div>
+            <h3 class="promise-title">I will protect your heart</h3>
+            <p class="promise-text">I promise to never again let my pride become a weapon against you. You trusted me
+              with the most precious thing you have &#x2014; your heart &#x2014; and I will guard it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: FORGIVENESS -->
+    <section id="section-forgive" class="section forgive-section" aria-label="Can you forgive me">
+      <div class="section-inner">
+        <div class="forgive-card glass reveal">
+          <p class="forgive-eyebrow">From the bottom of my heart</p>
+          <h2 class="forgive-heading">Faryal, can you<br /><em>forgive me?</em></h2>
+          <p class="body-text">
+            I know I do not deserve it automatically. I know words alone are not enough.
+            But I am here, I am sorry, and I am ready to do the work. Whatever you decide, I love you.
+          </p>
+          <div class="forgive-buttons" id="forgive-buttons">
+            <button id="btn-yes" class="btn-forgive btn-yes" onclick="handleForgiveness('yes')"
+              aria-label="Yes, I forgive you">
+              &#x2756; Yes, I forgive you
+            </button>
+            <button id="btn-time" class="btn-forgive btn-time" onclick="handleForgiveness('time')"
+              aria-label="I need some time">
+              I need some time
+            </button>
+          </div>
+          <div id="response-yes" class="response-box response-yes hidden" aria-live="polite">
+            <div class="response-icon" aria-hidden="true">&#x1F338;</div>
+            <h3 class="response-title">Shukria, Faryal. Dil se.</h3>
+            <p class="response-text">You have no idea how much this means to me. I will spend every day making sure you
+              never regret this moment. I love you so much &#x2014; more than I know how to say. You are my peace, my
+              home, my everything.</p>
+            <p class="urdu-line" lang="ur" dir="rtl">&#x62A;&#x645; &#x646;&#x6D2; &#x645;&#x639;&#x627;&#x641;
+              &#x6A9;&#x631; &#x6A9;&#x6D2; &#x645;&#x6CC;&#x631;&#x6CC; &#x62F;&#x646;&#x6CC;&#x627;
+              &#x648;&#x627;&#x67E;&#x633; &#x6A9;&#x631; &#x62F;&#x6CC;&#x06D4;</p>
+            <p class="urdu-translation">(By forgiving me, you gave my world back to me.)</p>
+          </div>
+          <div id="response-time" class="response-box response-time hidden" aria-live="polite">
+            <div class="response-icon" aria-hidden="true">&#x1F54A;&#xFE0F;</div>
+            <h3 class="response-title">I understand, Faryal.</h3>
+            <p class="response-text">You do not owe me forgiveness right now &#x2014; or ever, on my timeline. I will
+              wait. I will keep trying to be better, every single day, whether you are watching or not. Take all the
+              time you need. I am not going anywhere.</p>
+            <p class="urdu-line" lang="ur" dir="rtl">&#x62C;&#x628; &#x62A;&#x6A9; &#x62A;&#x645;
+              &#x62A;&#x6CC;&#x627;&#x631; &#x6C1;&#x648;&#x60C; &#x645;&#x6CC;&#x06BA; &#x6CC;&#x6C1;&#x6CC;&#x06BA;
+              &#x6C1;&#x648;&#x06BA;&#x06D4;</p>
+            <p class="urdu-translation">(Until you are ready, I am right here.)</p>
+          </div>
+        </div>
+        <footer class="site-footer">
+          <p>Written with love and all the regret in the world,</p>
+          <p class="footer-name">Hamza &#x1F339;</p>
+        </footer>
+      </div>
+    </section>
+
+  </main>
+
+  <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+  <audio id="bg-music" loop preload="none">
+    <source src="assets/khudaai.mp3" type="audio/mpeg" />
+  </audio>
+  <script src="script.js"></script>
+</body>
+
+</html>
